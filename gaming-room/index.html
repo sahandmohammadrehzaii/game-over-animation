@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>game over | 1980</title>
+  <link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-7d0085e88e3f06095d712efc55f79fc6aedaeed08967649de30e3ea674797898.css" />
+  <style>
+    html { font-size: 15px; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body { height:100%; display: flex; flex-direction: column; }
+    .referer-warning {
+      background: black;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      padding: 0.75em;
+      color: white;
+      text-align: center;
+      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, system-ui, Sans-Serif;
+      line-height: 1.2;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    .referer-warning span { font-family: initial; }
+    .referer-warning h1 { font-size: 1.2rem; margin: 0; }
+    .referer-warning a { color: #56bcf9; }
+  </style>
+</head>
+<body translate=&quot;no&quot;>
+  <div id="result-iframe-wrap" role="main">
+    <iframe
+      id="result"
+      srcdoc="
+
+  <div class=&quot;page&quot;>
+		<div class=&quot;wall-bg&quot;>
+			<ul>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+			<div class=&quot;wall-poster&quot;>
+				<h1>game <span>over</span></h1>
+				<i class=&quot;mr-akabei&quot;>
+					<div class=&quot;mr-akabei-content&quot;>
+						<span class=&quot;mr-akabei-eye-first&quot;></span>
+						<span class=&quot;mr-akabei-eye-second&quot;></span>
+						<span class=&quot;mr-akabei-bottom-1&quot;></span>
+						<span class=&quot;mr-akabei-bottom-2&quot;></span>
+						<span class=&quot;mr-akabei-bottom-3&quot;></span>
+						<span class=&quot;mr-akabei-bottom-4&quot;></span>
+						<span class=&quot;mr-akabei-bottom-5&quot;></span>
+						<span class=&quot;mr-akabei-bottom-6&quot;></span>
+						<span class=&quot;mr-akabei-bottom-7&quot;></span>
+					</div>
+					<i class=&quot;point-first&quot;></i>
+					<i class=&quot;point-second&quot;></i>
+					<i class=&quot;point-third&quot;></i>
+					<i class=&quot;point-four&quot;></i>
+					<i class=&quot;point-last&quot;></i>
+				</i>
+				<i class=&quot;mr-pacman&quot;>
+					<i class=&quot;point-first&quot;></i>
+					<i class=&quot;point-second&quot;></i>
+					<i class=&quot;point-third&quot;></i>
+					<i class=&quot;point-four&quot;></i>
+				</i>
+				<span>1980</span>
+			</div>
+			<div class=&quot;wall-desk&quot;>
+				<div class=&quot;timer&quot;>
+					<i class=&quot;timer-shadow&quot;></i>
+					<div class=&quot;timer-content&quot;>
+						<div class=&quot;timer-hr&quot;>
+							<div class=&quot;timer-digits&quot;></div>
+						</div>
+						<i class=&quot;timer-hr-right&quot;></i>
+					</div>
+					<i class=&quot;timer-right&quot;></i>
+					<i class=&quot;timer-hr-first&quot;></i>
+					<i class=&quot;timer-hr-second&quot;></i>
+					<i class=&quot;timer-hr-third&quot;></i>
+					<i class=&quot;timer-hr-last&quot;></i>
+				</div>
+				<i class=&quot;wall-desk-shadow&quot;></i>
+				<i class=&quot;wall-desk-bottom&quot;></i>
+				<i class=&quot;wall-desk-front&quot;></i>
+				<i class=&quot;wall-desk-right&quot;></i>
+			</div>
+		</div>
+		<div class=&quot;floor-bg&quot;><div class=&quot;floor-hr&quot;><i></i></div></div>
+
+		<div class=&quot;tv-content&quot;>
+			<div class=&quot;tv&quot;>
+				<div class=&quot;tv-top&quot;><i class=&quot;item-left&quot;></i><i class=&quot;item-right&quot;></i></div>
+				<div class=&quot;tv-shadow&quot;></div>
+				<div class=&quot;tv-right&quot;></div>
+				<div class=&quot;tv-bottom&quot;>
+					<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+					<i></i>
+				</div>
+				<div class=&quot;tv-screen&quot;><a href=&quot;&quot; class=&quot;pw-btn&quot;></a><div class=&quot;tv-hr&quot;><div class=&quot;tv-hr-2&quot;><div class=&quot;tv-hr-3&quot;>
+					<div class=&quot;tv-glass&quot;>
+						<canvas></canvas>
+						<div class=&quot;tv-glass-vintage&quot;>
+							<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+
+							<i class=&quot;tv-noise&quot;></i><i class=&quot;tv-noise-second&quot;></i>
+							<i class=&quot;tv-glow&quot;></i>
+						</div>
+					</div>
+					<div class=&quot;tv-flashing&quot;>
+						<i class=&quot;tv-flashing-left&quot;></i>
+						<i class=&quot;tv-flashing-bottom&quot;></i>
+						<i class=&quot;tv-flashing-bottom-placeholder&quot;></i>
+					</div>
+				</div></div></div></div>
+			</div>
+			<div class=&quot;tv-desk&quot;>
+				<i class=&quot;tv-desk-shadow&quot;></i>
+				<i class=&quot;tv-desk-item-left-shadow&quot;></i>
+				<i class=&quot;tv-desk-item-left&quot;></i>
+				<i class=&quot;tv-desk-item-right-shadow&quot;></i>
+				<i class=&quot;tv-desk-item-right&quot;></i>
+				<i class=&quot;tv-desk-item-rear-shadow&quot;></i>
+				<i class=&quot;tv-desk-item-rear&quot;></i>
+				<i class=&quot;tv-desk-top&quot;></i>
+				<i class=&quot;tv-desk-front&quot;></i>
+				<i class=&quot;tv-desk-right&quot;></i>
+			</div>
+		</div>
+
+		<div class=&quot;console&quot;>
+			<i class=&quot;console-shadow&quot;></i>
+			<div class=&quot;console-top&quot;>
+				<i class=&quot;console-game-top&quot;></i>
+				<div class=&quot;console-top-panel&quot;>
+					<i class=&quot;console-top-panel-item-1&quot;></i>
+					<i class=&quot;console-top-panel-item-2&quot;></i>
+					<i class=&quot;console-top-panel-item-3&quot;></i>
+					<i class=&quot;console-top-panel-item-4&quot;></i>
+					<i class=&quot;console-top-panel-item-5&quot;></i>
+					<i class=&quot;console-top-panel-item-6&quot;></i>
+					<i class=&quot;console-top-panel-item-7&quot;></i>
+					<i class=&quot;console-top-panel-item-8&quot;></i>
+				</div>
+			</div>
+			<i class=&quot;console-right-top&quot;></i>
+			<i class=&quot;console-right-bottom&quot;></i>
+			<div class=&quot;console-front-panel&quot;>
+				<div class=&quot;front-panel-top&quot;>
+					<i class=&quot;console-game&quot;></i>
+					<i class=&quot;console-power-dark&quot;></i>
+				</div>
+				<div class=&quot;front-panel-bottom&quot;>
+					<i class=&quot;console-power-indicator&quot;></i>
+					<i class=&quot;console-btn-first&quot;></i>
+					<i class=&quot;console-btn-second&quot;></i>
+					<div class=&quot;console-power&quot;>
+						<div class=&quot;console-power-plug&quot;><i></i></div>
+						<i class=&quot;console-power-cable&quot;></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class=&quot;player-1&quot;>
+			<div class=&quot;player-hand-left&quot;>
+				<div class=&quot;hand-content&quot;>
+					<i class=&quot;hand-left&quot;></i><i class=&quot;hand-inner&quot;></i>
+					<i class=&quot;hair-item-1&quot;></i>
+					<i class=&quot;hair-item-2&quot;></i>
+					<i class=&quot;hair-item-3&quot;></i>
+					<i class=&quot;hair-item-4&quot;></i>
+					<i class=&quot;hair-item-5&quot;></i>
+					<i class=&quot;hair-item-6&quot;></i>
+					<i class=&quot;hair-item-7&quot;></i>
+					<i class=&quot;hair-item-8&quot;></i>
+					<i class=&quot;hair-item-9&quot;></i>
+					<i class=&quot;hair-item-10&quot;></i>
+					<i class=&quot;hair-item-11&quot;></i>
+					<i class=&quot;hair-item-12&quot;></i>
+					<i class=&quot;hair-item-13&quot;></i>
+					<i class=&quot;hair-item-14&quot;></i>
+					<i class=&quot;hair-item-15&quot;></i>
+					<i class=&quot;hair-item-16&quot;></i>
+				</div>
+				<div class=&quot;finger-content&quot;><i class=&quot;finger-placeholder&quot;></i><i class=&quot;finger-touch&quot;></i></div>
+			</div>
+			<div class=&quot;player-hand-right&quot;>
+				<div class=&quot;hand-content&quot;>
+					<i class=&quot;hand-left&quot;></i><i class=&quot;hand-inner&quot;></i>
+					<i class=&quot;hair-item-1&quot;></i>
+					<i class=&quot;hair-item-2&quot;></i>
+					<i class=&quot;hair-item-3&quot;></i>
+					<i class=&quot;hair-item-4&quot;></i>
+					<i class=&quot;hair-item-5&quot;></i>
+					<i class=&quot;hair-item-6&quot;></i>
+					<i class=&quot;hair-item-7&quot;></i>
+					<i class=&quot;hair-item-8&quot;></i>
+					<i class=&quot;hair-item-9&quot;></i>
+					<i class=&quot;hair-item-10&quot;></i>
+					<i class=&quot;hair-item-11&quot;></i>
+					<i class=&quot;hair-item-12&quot;></i>
+					<i class=&quot;hair-item-13&quot;></i>
+					<i class=&quot;hair-item-14&quot;></i>
+					<i class=&quot;hair-item-15&quot;></i>
+					<i class=&quot;hair-item-16&quot;></i>
+				</div>
+				<div class=&quot;finger-content&quot;><i class=&quot;finger-placeholder&quot;></i><i class=&quot;finger-touch&quot;></i></div>
+			</div>
+
+			<div class=&quot;controller-nes&quot;><i class=&quot;controller-nes-cable&quot;></i><div class=&quot;in-controller-nes&quot;>
+				<i class=&quot;controller-nes-pad&quot;></i>
+				<div class=&quot;controller-nes-option&quot;>
+					<i class=&quot;hr-first&quot;></i>
+					<i class=&quot;hr-second&quot;></i>
+					<i class=&quot;hr-third&quot;></i>
+					<i class=&quot;hr-last&quot;></i>
+					<div class=&quot;controller-nes-option-btn&quot;></div>
+				</div>
+				<div class=&quot;controller-nes-btn&quot;><i></i><i></i></div>
+			</div></div>
+		</div>
+	</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script id=&quot;rendered-js&quot; src="1.js">
+			</script>
+
+	</body>
+
+</html>
